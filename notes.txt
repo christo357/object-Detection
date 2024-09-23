@@ -1,0 +1,19 @@
+Object Detection
+
+Metrics for evaluation:
+1. IoU : How good is Localization
+2. mAP: for classification
+
+IoU: Intersection over Union, It tells how close is the bounding box to the ground truth. Value between 0-1. If the boxes perfectly overlap: 1(best), for partial overlap value between 0 and 1.
+IoU = Area of Intersection / Area of Union of bounding box
+
+Precision: Actual positives out of the total positive predictions
+P = True Positives / (True Positives + False Positives)
+
+Recall : Actual Positives out of all predictions 
+R = True Positives/ (True Positives + False Negatives)
+
+Precision average: area under precision(y) - recall(x) curve. (For single class)
+If we have multiple classes we take mean of precision avg => mean Average Precision (mAP).
+
+ 
